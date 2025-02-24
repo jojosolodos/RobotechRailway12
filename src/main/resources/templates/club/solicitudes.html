@@ -9,7 +9,7 @@
 		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 	<link rel="stylesheet" th:href="@{../css/style.css}">
 	<link rel="stylesheet" th:href="@{../css/admin.css}">
-	<link rel="icon" href="../image/icono.ico" >
+	<link rel="icon" href="../image/icono-pagina.ico">
 	<style>
 			@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
 			@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Teko:wght@300..700&display=swap');
@@ -49,14 +49,14 @@
 					</tr>
 				</thead>
 				<tbody>
-					<tr th:each="mem : ${miembros}">
+					<tr class="GU-tr" th:each="mem : ${miembros}">
 						<td th:text="${mem.usuarioId.nombre}"></td>
 						<td th:text="${mem.usuarioId.username}"></td>
 						<td th:text="${mem.usuarioId.correo}"></td>
 						<td th:text="${mem.usuarioId.edad}"></td>
 						<td th:text="${mem.usuarioId.trayectoria} + ' meses'"></td>
 						<td><img th:src="@{'/img/'}+${mem.usuarioId.foto_robot}" alt=""
-								style="width: 50px; height: 50px;"></td>
+							 class="GU-img-robot"></td>
 						<td th:text="${mem.usuarioId.categoriaId.nombre}"></td>
 						<td>
 							<!-- Botón para cambiar estado a "Aprobado" -->
