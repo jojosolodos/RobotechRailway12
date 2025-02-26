@@ -1,0 +1,390 @@
+html,body{
+	height: 100%;
+}
+body{
+	background-image: url(https://html.designingmedia.com/crox/assets/images/upcoming_matches_background.png);
+		background-size: cover;
+		/* Ajusta la imagen para cubrir el elemento */
+		background-position: center;
+		/* Centra la imagen */
+		background-repeat: no-repeat;
+		/* Evita que la imagen se repita */
+		background-color: #17171b;
+		font-family: "Teko", serif;
+}
+/* Vista gestion torneo*/
+.div-creartorneo{
+	text-align: center;
+	padding-top: 30px;
+}
+.div-creartorneo a{
+	padding: 5px 10px;
+	border: solid 1px #BD0507;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+}
+.div-body-torneo{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	grid-template-rows: repeat();
+	padding: 50px;
+	column-gap: 50px;
+}
+.div-card-torneo {
+	margin-bottom: 50px;
+	padding: 50px;
+	background-color: #18222D;
+	height: 300px;
+	border: 4px solid #1E2A36;
+	border-radius: 15px 40px;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 100px 25px 100px;
+}
+
+.div-card-torneo span {
+	display: block;
+	font-size: 25px;
+	overflow: none;
+	color: white;
+}
+
+.card-contend {
+	grid-column: 3/7;
+}
+.card-jugadoresreq {
+	grid-column: 7/13;
+}
+.card-jugadoresreq span{
+	text-align: center;
+}
+.card-contend span:first-child {
+	font-size: 35px;
+	line-height: 1;
+}
+
+.card-contend2 {
+	grid-column: 3/6;
+	text-align: center;
+
+}
+
+.card-contend2 span:first-child,
+.card-contend3 span:first-child,
+.card-contend4 span:first-child {
+	color: #ADB0AC;
+}
+
+.card-contend2 span:last-child {
+	color: #C5DA42;
+}
+
+.line-torneo {
+	grid-column: 1/13;
+	height: 10px;
+	background-color: #10171F;
+	box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.2),
+		/* Línea superior */
+		0px 1px 3px rgba(255, 255, 255, 0.2);
+	/* Sombra inferior */
+
+}
+
+.card-contend3 {
+	grid-column: 1/3;
+	text-align: center;
+}
+
+.card-contend4 {
+	grid-column: 6/9;
+	text-align: center;
+	overflow: hidden;
+}
+.div-card-torneo form {
+	grid-column: 10/13;
+	height: 50px;
+	background-color: #283849;
+	text-align: center;
+	padding: 12px;
+}
+.div-card-torneo form button{
+	background-color: transparent;
+	border: none;
+	width: 100%;
+	height: 100%;
+}
+.div-card-torneo a{
+	text-decoration: none;
+	font-size: 18px;
+	color: gainsboro;
+}
+/* Diseños Crear torneo*/
+.body-crear-torneo{
+	background-image: url(https://html.designingmedia.com/crox/assets/images/live_stream_background.jpg);
+	background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		margin: auto;
+		position: relative;
+		font-family: "teko";
+		
+}
+.crear-torneo-container{
+	background-color: #10171F;
+	color: white;
+	border-radius: 5px;
+	border: #BD0507 2px solid;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); /* Centra el elemento */
+	padding: 10px 20px;
+	
+}
+.crear-torneo-container form button{
+	background-color: #BD0507;
+	text-decoration: none;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 5px;
+	border: none;
+	font-size: 20px;
+	line-height: 1;
+}
+#jugReq{
+	cursor: not-allowed;
+}
+/* Diseños Tablas*/
+.table-admin {
+	background-color: transparent;
+	width: 100%;
+	border-collapse: collapse;
+	color: white; /* Texto blanco */
+	 
+}
+
+
+/* Bordes rojos */
+.table-admin, .table-admin th, .table-admin td {
+  border: 1px solid red;
+}
+
+/* Estilo de los encabezados */
+.table-admin th {
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  background-color: black; /* Fondo negro */
+  color: white;
+  font-size: 20px;
+}
+
+/* Celdas de datos */
+.table-admin td {
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
+}
+.table-admin td:nth-child(9),table-admin td:last-child{
+	width: 130px;
+}
+/* Efecto hover en las filas */
+.table-admin tr:hover {
+  background-color: #333; /* Gris oscuro */
+}
+/* Vista dueño de club */
+.nav-g-soli{
+	grid-row: 2/3;
+}
+.menu-club{
+	grid-template-columns: 1fr 1fr;
+}
+.menu-club img{
+	grid-column: 1/3;
+}
+.menu-club a:last-child{
+	grid-row: 2/3;
+	grid-column: 2/3;
+}
+.g-club {
+	height: max-content;
+	padding-bottom: 50px;
+}
+.card-group .card{
+	border:#BD0507 2px solid;
+}
+.card-body{
+	background-color:black;
+	color: white;
+	font-size: 20	px;
+}
+/*Panel Admin*/
+.body-panel{
+	background-image: url(https://html.designingmedia.com/crox/assets/images/sub_banner_background.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color:#1A1023;
+	font-family: "Teko", serif;
+	display: flex;
+}
+.panel-1{
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+}
+.panel-1 img{
+	margin:0 auto auto auto;
+}
+.panel-1 div{
+	height: 200px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	padding-bottom: 20px;
+}
+.cerrar-sesion{
+	display: flex;
+	justify-content: center;
+	color: white;
+	font-size: 40px;
+}
+.cerrar-sesion span{
+	padding-right: 5px;
+	cursor:default;
+}
+.cerrar-sesion svg:hover{
+	color:#BD0507;
+}
+.panel-2{
+	padding: 110px 100px;
+	width:60%
+}
+.panel-2-club{
+	padding: 160px 100px;
+}
+.panel-2 span{
+	display: block;
+	line-height: 1;
+	text-align: center;
+	color: white;
+}
+.panel-2 strong{
+	color: #5E9F39;
+}
+.panel-2 span:first-child,.panel-2 span:nth-child(2){
+	font-size: 100px;
+}
+.panel-2 span:nth-child(2){
+	color: #BD0507;
+}
+.panel-2 span:nth-child(3){
+	font-size: 40px;
+	margin-top:30px;
+}
+.grid-panel{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	place-items: center;
+	text-align: center;
+	margin-top:40px;
+	row-gap: 40px;
+}
+.grid-panel a{
+	width: 250px;
+	text-decoration: none;
+	color: white;
+	background-color: #BD0507;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 25px;
+}
+.grid-panel a:hover{
+	background-color: #950607;
+	
+}
+.grid-panel a:nth-child(3){
+	grid-column: 1/3;
+}
+/* Detalle Torneo*/
+.body-torneo-detalle{
+	height: max-content;
+}
+.div-jugadores-admin{
+	width: 80%;
+	
+}
+.div-jugadores-img{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: repeat(1fr,2);
+	row-gap: 30px;
+	place-items: center;
+	padding: 0 35px;
+	
+}
+.contenedor {
+           position: relative;
+           display: inline-block;
+		   width: 250px;
+		   height: 300px;
+		   border: 1px solid wheat;
+       }
+       .contenedor img {
+           display: block;
+           width: 100%;
+           height: 100%;
+           border-radius: 10px;
+       }
+       .texto-overlay {
+           position: absolute;
+           bottom: 10px;
+           left: 10px;
+           background: rgba(0, 0, 0, 0.7);
+           color: white;
+           padding: 5px 10px;
+           font-size: 20px;
+           border-radius: 5px;
+       }
+.boton-generar{
+	color: white;
+		background-color: #BD0507;
+		border-radius: 5px;
+		padding:5px 10px;
+		font-size: 20px;
+		border: none;
+}
+
+.boton-generar:hover{
+	background-color: #950607;
+}
+#btnGuardarGanadores{
+	background-color: #5E9F39;
+	margin-top:20px;
+}
+#btnGuardarGanadores:hover{
+	background-color: rgb(0, 128, 0);
+	
+}
+.table-admin-cuartos td{
+	padding: 5px;
+}
+.table-admin-cuartos td div{
+	text-align: start;
+	padding-left: 45%
+}
+.boton-generar-semi{
+	background-color: rgb(255, 128, 0);
+}
+.boton-generar-semi:hover{
+	background-color: rgb(255, 128, 64);
+}
+.boton-generar-guardar-semi{
+	background-color: cornflowerblue;
+}
+.boton-generar-guardar-semi:hover{
+	background-color: rgb(0, 0, 255);
+}
